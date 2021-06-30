@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  # mysql 配置
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+
+  # redis 缓存配置
+  redis:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+    database: ${REDIS_DATABASE}
+
+#Swagger lock
+swagger:
+  enabled: ${SWAGGER_ENABLE}
+
+
+

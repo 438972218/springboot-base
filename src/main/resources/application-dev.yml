@@ -1,0 +1,28 @@
+server:
+  port: 9095
+
+spring:
+  # mysql 配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/xdcweb?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+
+  # redis 缓存配置
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+
+#Swagger lock
+swagger:
+  enabled: true
+
+
+
+
+
+
+
+
+
